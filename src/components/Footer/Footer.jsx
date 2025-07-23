@@ -25,8 +25,8 @@ const Footer = () => {
           <Link to="/security" className="hover:text-blue-400 transition">
             Security
           </Link>
-          <Link to="/servicios" className="hover:text-blue-400 transition">
-            Servicios
+          <Link to="/HerramientasSecurity" className="hover:text-blue-400 transition">
+            Herramientas de Seguridad
           </Link>
         </div>
 

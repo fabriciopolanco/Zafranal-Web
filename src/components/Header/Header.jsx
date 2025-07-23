@@ -40,7 +40,7 @@ const Header = () => {
                                     onMouseLeave={() => setIsToolsOpen(false)}
                                 >
                                     <Link 
-                                        to="/herramientas-security" 
+                                        to="/HerramientasSecurity" 
                                         className="block px-4 py-2 hover:bg-gray-50 text-gray-700"
                                         onClick={() => setIsToolsOpen(false)}
                                     >
