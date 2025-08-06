@@ -107,20 +107,19 @@ const HerramientasSecurity = () => {
                 </section>
 
                 {/* Antares Rounds System Section */}
-                <section className="antares-section bg-gradient-to-br from-blue-800 to-blue-900 rounded-xl shadow-2xl overflow-hidden mb-16 border border-blue-700 transform transition-all hover:scale-[1.005] hover:shadow-lg">
-                    <div className="antares-header bg-blue-950/80 text-white px-8 py-6 backdrop-blur-sm">
+                <section className="antares-section bg-gradient-to-br from-blue-800 rounded-xl overflow-hidden mb-16 border border-blue-700 transform transition-all hover:scale-[1.005] hover:shadow-lg">
+                    <div className="antares-header bg-blue-900/80 text-white px-8 py-6 backdrop-blur-sm">
                         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                            <h2 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-100">
+                            <h2 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent text-white">
                                 ANTARES ROUNDS SYSTEM
                             </h2>
                         </div>
                     </div>
                     <div className="antares-content p-8 bg-white/5 backdrop-blur-sm">
                         <div className="tab-content">
-                            <p className="mb-6 text-blue-100 leading-relaxed text-lg">
-                                El control rondas es un sistema especialmente diseñado para gestionar e inspeccionar los
-                                puntos claves de las instalaciones de la UMC, el cual permite detectar cualquier incidente o
-                                brecha de seguridad y poder así actuar de manera inmediata.
+                            <p className="mb-6 text-black leading-relaxed text-lg">
+
+                                El control rondas es un sistema especialmente diseñado para gestionar e inspeccionar los puntos claves de todos los componentes del proyecto Zafranal,  el cual permite detectar cualquier incidente o brecha de seguridad y poder así actuar de manera inmediata.
                             </p>
                             <Link
                                 to="#"
@@ -134,20 +133,18 @@ const HerramientasSecurity = () => {
                 </section>
 
                 {/* Security Reports Section */}
-                <section className="antares-section bg-gradient-to-br from-blue-800 to-blue-900 rounded-xl shadow-2xl overflow-hidden mb-16 border border-blue-700 transform transition-all hover:scale-[1.005] hover:shadow-lg">
-                    <div className="antares-header bg-blue-950/80 text-white px-8 py-6 backdrop-blur-sm">
+                <section className="antares-section bg-gradient-to-br from-blue-800 rounded-xl shadow-2xl overflow-hidden mb-16 border border-blue-700 transform transition-all hover:scale-[1.005] hover:shadow-lg">
+                    <div className="antares-header bg-blue-900/80 text-white px-8 py-6 backdrop-blur-sm">
                         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                            <h2 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-blue-100">
+                            <h2 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent text-white">
                                 SECURITY REPORTS
                             </h2>
                         </div>
                     </div>
                     <div className="antares-content p-8 bg-white/5 backdrop-blur-sm">
                         <div className="tab-content">
-                            <p className="mb-6 text-blue-100 leading-relaxed text-lg">
-                                El reporte tiene como finalidad comunicar e informar de situaciones que se hayan podido dar.
-                                Recopilan datos que te ayudan a diseñar mejores estrategias y programas de medidas
-                                preventivas en cualquier eventualidad dentro de la Unidad Minera Constancia.
+                            <p className="mb-6 text-black leading-relaxed text-lg">
+                                El reporte tiene como finalidad comunicar e informar de situaciones que se hayan podido dar. Recopilan datos que te ayudan a diseñar mejores estrategias y programas de medidas preventivas en cualquier eventualidad dentro del proyecto Zafranal.
                             </p>
                             <Link
                                 to="#"
