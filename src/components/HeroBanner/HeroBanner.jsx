@@ -1,22 +1,21 @@
 import React from 'react';
-import { Link } from 'react-scroll'; // Necesitarás instalar react-scroll
+import { Link } from 'react-scroll';
+import heroBanner from '../../assets/hero-banner.jpg'; // ajusta la ruta según tu estructura
 
 const HeroBanner = () => {
     return (
         <section
             className="relative h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: "url('/src/assets/hero-banner.jpg')" }}
+            style={{ backgroundImage: `url(${heroBanner})` }}
         >
             <div className="container mx-auto px-4 text-center">
                 <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
                     ZAFRANAL <span className="text-blue-400">TECK</span>
                 </h1>
-
                 <h2 className="text-2xl md:text-4xl font-semibold text-white mb-6 drop-shadow-lg">
                     GERENCIA DE SEGURIDAD PATRIMONIAL<br />
                     Y RESPUESTA A EMERGENCIAS
                 </h2>
-
                 <Link
                     to="about-section"
                     smooth={true}
