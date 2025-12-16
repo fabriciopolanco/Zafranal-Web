@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import image1 from "../../assets/images/image1.jpeg";
+import image2 from "../../assets/images/image2.jpeg";
+import image3 from "../../assets/images/image3.jpeg";
 
 const ModernGallery = () => {
-  const images = [
-    { id: 1, src: 'src/assets/images/image1.jpeg', title: 'Seguridad Patrimonial', description: 'Nuestro equipo en acción' },
-    { id: 2, src: 'src/assets/images/image2.jpeg', title: 'Seguridad Patrimonial', description: 'Simulacro de capacitación' },
-    { id: 3, src: 'src/assets/images/image3.jpeg', title: 'Seguridad Patrimonial', description: 'Programas de sostenibilidad' }
-  ];
+const images = [
+  { id: 1, src: image1, title: "Seguridad Patrimonial", description: "Nuestro equipo en acción" },
+  { id: 2, src: image2, title: "Seguridad Patrimonial", description: "Simulacro de capacitación" },
+  { id: 3, src: image3, title: "Seguridad Patrimonial", description: "Programas de sostenibilidad" }
+];
+
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
