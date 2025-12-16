@@ -3,11 +3,9 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 const ModernGallery = () => {
   const images = [
-    { id: 1, src: 'src/assets/images/image1.jpg', title: 'Seguridad Patrimonial', description: 'Nuestro equipo en acción' },
-    { id: 2, src: 'src/assets/images/image1.jpg', title: 'Respuesta a Emergencias', description: 'Simulacro de capacitación' },
-    { id: 3, src: 'src/assets/images/image1.jpg', title: 'Medio Ambiente', description: 'Programas de sostenibilidad' },
-    { id: 4, src: 'src/assets/images/image1.jpg', title: 'Equipo Profesional', description: 'Nuestros especialistas' },
-    { id: 5, src: 'src/assets/images/image1.jpg', title: 'Comunidad', description: 'Trabajando con vecinos' }
+    { id: 1, src: 'src/assets/images/image1.jpeg', title: 'Seguridad Patrimonial', description: 'Nuestro equipo en acción' },
+    { id: 2, src: 'src/assets/images/image2.jpeg', title: 'Seguridad Patrimonial', description: 'Simulacro de capacitación' },
+    { id: 3, src: 'src/assets/images/image3.jpeg', title: 'Seguridad Patrimonial', description: 'Programas de sostenibilidad' }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

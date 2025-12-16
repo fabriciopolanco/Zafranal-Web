@@ -1,52 +1,58 @@
-import React from 'react';
-import { 
-  FaShieldAlt, 
-  FaHandshake, 
-  FaLeaf, 
-  FaUsers, 
-  FaLightbulb, 
-  FaHeart 
-} from 'react-icons/fa';
+import React from "react";
+import {
+  FaShieldAlt,
+  FaHandshake,
+  FaLeaf,
+  FaUsers,
+  FaLightbulb,
+  FaHeart,
+} from "react-icons/fa";
 
 const ValuesSection = () => {
   const values = [
     {
       icon: <FaShieldAlt className="w-8 h-8" />,
-      title: "Seguridad",
-      description: "Priorizamos la protección de nuestras personas, activos y comunidades en todas nuestras operaciones."
+      title: "Responsables y valientes",
+      description:
+        "Hacemos lo correcto, incluso cuando es difícil o se requiere una acción energética.",
     },
     {
       icon: <FaHandshake className="w-8 h-8" />,
-      title: "Integridad",
-      description: "Actuamos con honestidad, transparencia y ética en todas nuestras relaciones y operaciones."
+      title: "Respetuosos e Inclusivos",
+      description:
+        "Creemos que todas las personas son importantes y que juntos somos mejores.",
     },
     {
       icon: <FaLeaf className="w-8 h-8" />,
-      title: "Sostenibilidad",
-      description: "Nos comprometemos con el desarrollo responsable y el cuidado del medio ambiente."
+      title: "Excelencia",
+      description:
+        "Logramos un desempeño sobresaliente a través de la innovación y el compromiso con el mejoramiento continuo en eficiencia y productividad.",
     },
     {
       icon: <FaUsers className="w-8 h-8" />,
-      title: "Trabajo en Equipo",
-      description: "Fomentamos la colaboración, el respeto mutuo y el crecimiento conjunto."
+      title: "Salud y Seguridad",
+      description:
+        "Hacemos lo que sea necesario para garantizar que todos y todas vuelvan a casa sanos y salvos cada día.",
     },
     {
       icon: <FaLightbulb className="w-8 h-8" />,
-      title: "Innovación",
-      description: "Buscamos constantemente mejoras y soluciones creativas para los desafíos."
+      title: "Sustentabilidad",
+      description:
+        "Aseguramos el bienestar de las personas, comunidades y los entornos que se nos han confiado.",
     },
     {
       icon: <FaHeart className="w-8 h-8" />,
-      title: "Compromiso Social",
-      description: "Trabajamos para generar un impacto positivo en las comunidades donde operamos."
-    }
+      title: "Humildes y determinados",
+      description:
+        "Somos abiertos y escuchamos, aprendemos y somos incansables en la búsqueda de la excelencia.",
+    },
   ];
 
   return (
     <section className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
       {/* Elemento decorativo */}
       <div className="absolute -top-20 -right-20 w-64 h-64 bg-blue-100 rounded-full opacity-20"></div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
         {/* Encabezado */}
         <div className="text-center mb-16 max-w-3xl mx-auto">
@@ -54,7 +60,8 @@ const ValuesSection = () => {
             Nuestros <span className="text-blue-600">Valores</span>
           </h2>
           <p className="text-xl text-gray-600">
-            Principios fundamentales que guían cada acción y decisión en Zafranal
+            Principios fundamentales que guían cada acción y decisión en
+            Zafranal
           </p>
           <div className="mt-8 h-1 w-20 bg-blue-500 mx-auto"></div>
         </div>
@@ -62,17 +69,19 @@ const ValuesSection = () => {
         {/* Grid de valores */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {values.map((value, index) => (
-            <div 
+            <div
               key={index}
-              className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100 hover:border-blue-100"
+              className="bg-blue-900 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-800 hover:border-blue-600"
             >
               <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 bg-blue-100 p-3 rounded-full text-blue-600">
+                <div className="flex-shrink-0 bg-blue-700 p-3 rounded-full text-white">
                   {value.icon}
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">{value.title}</h3>
-                  <p className="text-gray-600">{value.description}</p>
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    {value.title}
+                  </h3>
+                  <p className="text-blue-100">{value.description}</p>
                 </div>
               </div>
             </div>
@@ -81,8 +90,12 @@ const ValuesSection = () => {
       </div>
 
       {/* Ola decorativa inferior */}
-      <div className="wave-divider mt-20">
-        <svg viewBox="0 0 1200 120" preserveAspectRatio="none" className="w-full">
+      <div className="wave-divider mt-10">
+        <svg
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+          className="w-full"
+        >
           <path
             d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
             opacity=".25"
