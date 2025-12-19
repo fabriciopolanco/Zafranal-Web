@@ -31,35 +31,35 @@ const HerramientasSecurity = () => {
       title: "Antares Rounds Management System",
       description:
         "Un sistema digital de gestión de patrullaje e inspección diseñado para monitorear puntos de control de seguridad críticos en todo el Proyecto Zafranal, lo que permite la detección temprana de incidentes y una respuesta inmediata.",
-      link: "#",
+      link: "https://make.powerapps.com/e/Default-ce6ec000-1cfa-49c2-a24f-7db63c8a9a52/canvas/?action=edit&app-id=%2Fproviders%2FMicrosoft.PowerApps%2Fapps%2F91d147e0-e3de-42a2-849c-d87976bf006e&utm_source=PAMarketing&utm_medium=header&utm_campaign=signin",
       icon: <FaShieldAlt />,
     },
     {
       title: "Emergency Panic Button System",
       description:
         "Un sistema de alerta de emergencia en tiempo real que permite al personal notificar instantáneamente al Centro de Control de Seguridad en situaciones críticas, lo que permite una respuesta y escalada rápidas.",
-      link: "#",
+      link: "https://make.powerapps.com/e/Default-ce6ec000-1cfa-49c2-a24f-7db63c8a9a52/canvas/?action=edit&app-id=%2Fproviders%2FMicrosoft.PowerApps%2Fapps%2F91d147e0-e3de-42a2-849c-d87976bf006e&utm_source=PAMarketing&utm_medium=header&utm_campaign=signin",
       icon: <FaExclamationTriangle />,
     },
     {
       title: "Alcohol Testing Management System",
       description:
         "Un sistema centralizado para gestionar los procesos de pruebas de alcohol, seguimiento de resultados, verificación de cumplimiento y auditabilidad para garantizar la seguridad de la fuerza laboral y el cumplimiento normativo.",
-      link: "#",
+      link: "https://app.powerbi.com/reportEmbed?reportId=c9c37684-ca46-406b-b3e4-35d4d95b92ab&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52",
       icon: <FaClipboardList />,
     },
     {
       title: "Vehicle Movement & Linear Traffic Control System",
       description:
         "Una plataforma de monitoreo y control del movimiento de vehículos y tráfico lineal dentro de la operación, diseñada para mejorar la seguridad vial, la eficiencia operativa y la prevención de incidentes.",
-      link: "#",
+      link: "https://app.powerbi.com/reportEmbed?reportId=caa5e7e6-7d2d-42a3-938c-80e598962f92&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52",
       icon: <FaChartLine />,
     },
     {
       title: "Unsafe Conditions Reporting System",
       description:
         "Un sistema digital para el registro, seguimiento y gestión de condiciones inseguras identificadas dentro del Proyecto Zafranal, que permite la notificación oportuna, evaluación de riesgos, asignación de acciones correctivas y trazabilidad hasta su cierre, fortaleciendo la prevención de incidentes y la cultura de seguridad.",
-      link: "#",
+      link: "https://app.powerbi.com/reportEmbed?reportId=2c5a375c-45c8-4168-94c2-c0f19227a082&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52",
       icon: <FaHardHat />,
     },
   ];
@@ -86,38 +86,49 @@ const HerramientasSecurity = () => {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
             {/* KPI's */}
-            <Link
-              to="/KPIS"
+            <a
+              href="https://app.powerbi.com/reportEmbed?reportId=973ee36b-74be-491b-bb35-233c2d684661&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
+              target="_blank"
+              rel="noopener noreferrer"
               className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
             >
               <FaChartLine className="text-blue-500 text-4xl mb-5" />
               <h3 className="text-lg font-semibold">KPI's</h3>
-            </Link>
+            </a>
 
             {/* Security Systems */}
-            <Link
-              to="/SeguritySystem"
+            <a
+              href="https://app.powerbi.com/reportEmbed?reportId=f02ba3aa-9f48-4eae-a89e-73c344804631&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
+              target="_blank"
+              rel="noopener noreferrer"
               className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
             >
               <FaShieldAlt className="text-blue-500 text-4xl mb-5" />
               <h3 className="text-lg font-semibold">Security Systems</h3>
-            </Link>
+            </a>
+
             {/* Estrategic Objectives */}
-            <Link
-              to="/EstrategicObjectives"
+            <a
+              href="https://lookerstudio.google.com/u/4/reporting/e7a89280-7825-4e4b-9cd0-75031acabdc4/page/p_jj90ukcvpd"
+              target="_blank"
+              rel="noopener noreferrer"
               className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
             >
               <FaBullseye className="text-blue-500 text-4xl mb-5" />
               <h3 className="text-lg font-semibold">Estrategic Objectives</h3>
-            </Link>
+            </a>
+
             {/* Security Procedures */}
-            <Link
-              to="https://app.powerbi.com/view?r=eyJrIjoiOGFlZjc3OTktYjkwZC00MzY1LWIwMjMtMzhlYTU1ZGY5YjY4IiwidCI6IjgwOTIzNmIxLTgwMTYtNDNlNC1hNWFkLWI2OTE4NjdkMmUxNCIsImMiOjR9"
+            <a
+              href="https://app.powerbi.com/view?r=eyJrIjoiOGFlZjc3OTktYjkwZC00MzY1LWIwMjMtMzhlYTU1ZGY5YjY4IiwidCI6IjgwOTIzNmIxLTgwMTYtNDNlNC1hNWFkLWI2OTE4NjdkMmUxNCIsImMiOjR9"
+              target="_blank"
+              rel="noopener noreferrer"
               className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
             >
               <FaClipboardList className="text-blue-500 text-4xl mb-5" />
               <h3 className="text-lg font-semibold">Security Procedures</h3>
-            </Link>
+            </a>
+
             {/* Voluntary Principles */}
             <Link
               to="/VoluntaryPrinciples"
@@ -129,31 +140,37 @@ const HerramientasSecurity = () => {
               </h3>
             </Link>
             {/* Headcount */}
-            <Link
-              to="#"
+            <a
+              href="https://app.powerbi.com/view?r=eyJrIjoiYjAzNjA4YTQtNzk5Ni00M2RiLWE2NzgtMDYzNmQ1NzdlNjdjIiwidCI6IjgwOTIzNmIxLTgwMTYtNDNlNC1hNWFkLWI2OTE4NjdkMmUxNCIsImMiOjR9&pageName=e5414ed108ef00cfa36a"
+              target="_blank"
+              rel="noopener noreferrer"
               className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
             >
               <FaUsers className="text-blue-500 text-4xl mb-5" />
               <h3 className="text-lg font-semibold">Headcount</h3>
-            </Link>
+            </a>
 
             {/* Budget & Contracts */}
-            <Link
-              to="/Budget&Contratc"
+            <a
+              href="https://app.powerbi.com/reportEmbed?reportId=2520f01e-7bd6-4727-95e4-b2e49ddb49a0&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
+              target="_blank"
+              rel="noopener noreferrer"
               className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
             >
               <FaFileInvoiceDollar className="text-blue-500 text-4xl mb-5" />
               <h3 className="text-lg font-semibold">Budget & Contracts</h3>
-            </Link>
+            </a>
 
             {/* Security Awareness */}
-            <Link
-              to="/SecurityAwareness"
+            <a
+              href="https://app.powerbi.com/view?r=eyJrIjoiMGE4M2M2MzgtODBhZS00MjgwLTkzMzktMWQwNzg1ZDM1NGQ3IiwidCI6IjgwOTIzNmIxLTgwMTYtNDNlNC1hNWFkLWI2OTE4NjdkMmUxNCIsImMiOjR9"
+              target="_blank"
+              rel="noopener noreferrer"
               className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
             >
               <FaLightbulb className="text-blue-500 text-4xl mb-5" />
               <h3 className="text-lg font-semibold">Security Awareness</h3>
-            </Link>
+            </a>
 
             {/* Risk Assessment */}
             <Link
@@ -212,13 +229,15 @@ const HerramientasSecurity = () => {
                     {system.description}
                   </p>
 
-                  <Link
-                    to={system.link}
+                  <a
+                    href={system.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-3 text-blue-700 font-semibold hover:text-blue-800 transition-colors"
                   >
                     <span>Access System</span>
                     <FaArrowRight className="transition-transform group-hover:translate-x-1" />
-                  </Link>
+                  </a>
                 </div>
               </div>
             ))}
