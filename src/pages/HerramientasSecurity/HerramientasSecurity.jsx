@@ -120,7 +120,7 @@ const HerramientasSecurity = () => {
 
             {/* Security Procedures */}
             <a
-              href="https://app.powerbi.com/view?r=eyJrIjoiOGFlZjc3OTktYjkwZC00MzY1LWIwMjMtMzhlYTU1ZGY5YjY4IiwidCI6IjgwOTIzNmIxLTgwMTYtNDNlNC1hNWFkLWI2OTE4NjdkMmUxNCIsImMiOjR9"
+              href="https://app.powerbi.com/reportEmbed?reportId=b9f3bbe8-dd0c-4f20-a661-12b0906b38b8&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
               target="_blank"
               rel="noopener noreferrer"
               className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
@@ -141,7 +141,7 @@ const HerramientasSecurity = () => {
             </Link>
             {/* Headcount */}
             <a
-              href="https://app.powerbi.com/view?r=eyJrIjoiYjAzNjA4YTQtNzk5Ni00M2RiLWE2NzgtMDYzNmQ1NzdlNjdjIiwidCI6IjgwOTIzNmIxLTgwMTYtNDNlNC1hNWFkLWI2OTE4NjdkMmUxNCIsImMiOjR9&pageName=e5414ed108ef00cfa36a"
+              href="https://app.powerbi.com/reportEmbed?reportId=21c29bfc-eea7-4f62-9723-64bce519b535&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
               target="_blank"
               rel="noopener noreferrer"
               className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
