@@ -22,7 +22,7 @@ const HeroBanner = () => {
                     duration={500}
                     className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded-full transition duration-300 cursor-pointer drop-shadow-lg"
                 >
-                    Leer más
+                    Read more 
                 </Link>
             </div>
         </section>

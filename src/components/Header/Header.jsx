@@ -17,7 +17,7 @@ const Header = () => {
                     <ul className="flex space-x-8">
                         <li>
                             <Link to="/" className="hover:text-blue-400 transition">
-                                Inicio
+                                Home
                             </Link>
                         </li>
                         <li>
@@ -31,7 +31,7 @@ const Header = () => {
                                 onMouseEnter={() => setIsToolsOpen(true)}
                                 onClick={() => setIsToolsOpen(!isToolsOpen)}
                             >
-                                Herramientas <FaChevronDown className={`ml-1 transition-transform ${isToolsOpen ? 'transform rotate-180' : ''}`} />
+                                Tools <FaChevronDown className={`ml-1 transition-transform ${isToolsOpen ? 'transform rotate-180' : ''}`} />
                             </button>
                             
                             {isToolsOpen && (
@@ -44,14 +44,14 @@ const Header = () => {
                                         className="block px-4 py-2 hover:bg-gray-700 text-white"
                                         onClick={() => setIsToolsOpen(false)}
                                     >
-                                        Security
+                                        Security and Emergency response
                                     </Link>
                                     <Link 
                                         to="/respuesta-emergencias" 
                                         className="block px-4 py-2 hover:bg-gray-700 text-white"
                                         onClick={() => setIsToolsOpen(false)}
                                     >
-                                        Respuesta a Emergencias
+                                        Emergency response
                                     </Link>
                                 </div>
                             )}

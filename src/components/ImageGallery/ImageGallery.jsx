@@ -1,108 +1,168 @@
-import React, { useState, useEffect } from 'react';
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
-import image1 from "../../assets/images/image1.jpeg";
-import image2 from "../../assets/images/image2.jpeg";
-import image3 from "../../assets/images/image3.jpeg";
+// src/components/ImageGallery.jsx
+import React, { useState, useEffect } from "react";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
-const ModernGallery = () => {
-const images = [
-  { id: 1, src: image1, title: "Seguridad Patrimonial", description: "Nuestro equipo en acción" },
-  { id: 2, src: image2, title: "Seguridad Patrimonial", description: "Simulacro de capacitación" },
-  { id: 3, src: image3, title: "Seguridad Patrimonial", description: "Programas de sostenibilidad" }
-];
+// Imágenes de Seguridad Patrimonial
+import patrimonial1 from "../../assets/images/image1.jpeg";
+import patrimonial2 from "../../assets/images/image1.jpeg";
+import patrimonial3 from "../../assets/images/image1.jpeg";
 
+// Imágenes de Respuesta a Emergencias
+import emergencias1 from "../../assets/images/image2.jpeg";
+import emergencias2 from "../../assets/images/image2.jpeg";
+import emergencias3 from "../../assets/images/image2.jpeg";
 
-  const [currentIndex, setCurrentIndex] = useState(0);
+const ImageGallery = () => {
+  const patrimonialImages = [
+    {
+      id: 1,
+      src: patrimonial1,
+      title: "Patrullaje y Vigilancia",
+      description: "Control perimetral 24/7",
+    },
+    {
+      id: 2,
+      src: patrimonial2,
+      title: "Capacitación Continua",
+      description: "Entrenamiento especializado",
+    },
+    {
+      id: 3,
+      src: patrimonial3,
+      title: "Tecnología Avanzada",
+      description: "Sistemas de monitoreo moderno",
+    },
+  ];
 
-  // Auto-rotación del carrusel
-  useEffect(() => {
-    const interval = setInterval(() => {
+  const emergenciasImages = [
+    {
+      id: 1,
+      src: emergencias1,
+      title: "Simulacro de Evacuación",
+      description: "Respuesta coordinada",
+    },
+    {
+      id: 2,
+      src: emergencias2,
+      title: "Primeros Auxilios",
+      description: "Atención inmediata en sitio",
+    },
+    {
+      id: 3,
+      src: emergencias3,
+      title: "Control de Incendios",
+      description: "Equipo altamente preparado",
+    },
+  ];
+
+  const Carousel = ({ images, sectionTitle }) => {
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setCurrentIndex((prev) => (prev + 1) % images.length);
+      }, 5000);
+      return () => clearInterval(interval);
+    }, [images.length]);
+
+    const goToNext = () =>
       setCurrentIndex((prev) => (prev + 1) % images.length);
-    }, 4000);
-    return () => clearInterval(interval);
-  }, [images.length]);
+    const goToPrev = () =>
+      setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
 
-  const goToNext = () => {
-    setCurrentIndex((prev) => (prev + 1) % images.length);
-  };
+    return (
+      <div className="relative group h-full">
+        {/* Imagen principal (más compacta) */}
+        <div className="relative aspect-video overflow-hidden rounded-2xl shadow-xl transition-shadow duration-500 hover:shadow-2xl">
+          <img
+            src={images[currentIndex].src}
+            alt={images[currentIndex].title}
+            className="w-full h-full object-cover"
+          />
 
-  const goToPrev = () => {
-    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length);
+          {/* Overlay con texto */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-6">
+            <div className="max-w-md">
+              <h4 className="text-xl md:text-2xl font-bold text-white mb-2">
+                {images[currentIndex].title}
+              </h4>
+              <p className="text-gray-200 text-sm md:text-base">
+                {images[currentIndex].description}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Miniaturas compactas */}
+        <div className="flex justify-center mt-4 space-x-2">
+          {images.map((img, index) => (
+            <button
+              key={img.id}
+              onClick={() => setCurrentIndex(index)}
+              className={`w-12 h-12 md:w-14 md:h-14 overflow-hidden rounded-lg transition-all duration-300 ${
+                currentIndex === index
+                  ? "ring-3 ring-blue-500 scale-110"
+                  : "opacity-60 hover:opacity-100"
+              }`}
+            >
+              <img
+                src={img.src}
+                alt={img.title}
+                className="w-full h-full object-cover"
+              />
+            </button>
+          ))}
+        </div>
+
+        {/* Controles */}
+        <button
+          onClick={goToPrev}
+          className="absolute left-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <FiChevronLeft size={20} />
+        </button>
+        <button
+          onClick={goToNext}
+          className="absolute right-3 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-2 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+        >
+          <FiChevronRight size={20} />
+        </button>
+      </div>
+    );
   };
 
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4">
-        {/* Encabezado con estilo moderno */}
-        <div className="text-center mb-16">
-          <span className="text-sm font-semibold text-blue-600 tracking-widest uppercase">
-            EXPLORA NUESTRO TRABAJO
+        {/* Título principal */}
+        <div className="text-center mb-12 md:mb-16">
+          <span className="text-sm font-bold text-blue-600 tracking-widest uppercase">
+            OUR AREAS IN ACTION
           </span>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-3 mb-4">
-            Galería <span className="text-blue-600">Visual</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-4">
+            Visual <span className="text-blue-600">Gallery</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Descubre momentos destacados de nuestros proyectos y actividades
+          <p className="text-lg md:text-xl text-gray-600 mt-4 max-w-3xl mx-auto">
+            Learn about the daily work of our specialized teams
           </p>
         </div>
 
-        {/* Carrusel moderno */}
-        <div className="relative max-w-6xl mx-auto group">
-          {/* Imagen principal con efecto hover */}
-          <div className="relative aspect-video overflow-hidden rounded-2xl shadow-2xl transition-all duration-500 transform group-hover:shadow-xl">
-            <img
-              src={images[currentIndex].src}
-              alt={images[currentIndex].title}
-              className="w-full h-full object-cover transition-opacity duration-500"
-            />
-            
-            {/* Overlay con texto moderno */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent flex flex-col justify-end p-8">
-              <div className="transform transition-transform duration-500 group-hover:-translate-y-2">
-                <h3 className="text-2xl font-bold text-white mb-2">{images[currentIndex].title}</h3>
-                <p className="text-gray-200 text-lg">{images[currentIndex].description}</p>
-              </div>
-            </div>
+        {/* Dos carruseles lado a lado */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 max-w-7xl mx-auto">
+          {/* Izquierda: Seguridad Patrimonial */}
+          <div className="flex flex-col">
+            <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">
+              Patrimonial <span className="text-blue-600">Security</span>
+            </h3>
+            <Carousel images={patrimonialImages} />
           </div>
 
-          {/* Miniaturas */}
-          <div className="flex justify-center mt-6 space-x-3">
-            {images.map((img, index) => (
-              <button
-                key={img.id}
-                onClick={() => setCurrentIndex(index)}
-                className={`w-16 h-16 overflow-hidden rounded-lg transition-all duration-300 ${currentIndex === index ? 'ring-4 ring-blue-500 scale-110' : 'opacity-70 hover:opacity-100'}`}
-              >
-                <img 
-                  src={img.src} 
-                  alt={img.title} 
-                  className="w-full h-full object-cover"
-                />
-              </button>
-            ))}
-          </div>
-
-          {/* Controles elegantes */}
-          <button
-            onClick={goToPrev}
-            className="absolute left-6 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-          >
-            <FiChevronLeft size={28} />
-          </button>
-          <button
-            onClick={goToNext}
-            className="absolute right-6 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white text-gray-900 p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-          >
-            <FiChevronRight size={28} />
-          </button>
-
-          {/* Indicador de progreso */}
-          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-40 h-1 bg-white/30 rounded-full overflow-hidden">
-            <div 
-              className="h-full bg-white transition-all duration-4000 ease-linear"
-              style={{ width: '100%', transformOrigin: 'left' }}
-              key={currentIndex}
-            />
+          {/* Derecha: Respuesta a Emergencias */}
+          <div className="flex flex-col">
+            <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">
+                Emergency  <span className="text-blue-600">Response</span>
+            </h3>
+            <Carousel images={emergenciasImages} />
           </div>
         </div>
       </div>
@@ -110,4 +170,4 @@ const images = [
   );
 };
 
-export default ModernGallery;   
+export default ImageGallery;

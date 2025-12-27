@@ -71,7 +71,7 @@ const HerramientasSecurity = () => {
       <section className="hero bg-gradient-to-r from-blue-900 to-blue-800 text-white py-16 text-center mb-10">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl font-bold mb-4">
-            HERRAMIENTAS DIGITALES SECURITY
+            TOOLS DIGITAL SECURITY AND EMERGENCY RESPONSE
           </h1>
         </div>
       </section>
@@ -81,7 +81,7 @@ const HerramientasSecurity = () => {
         {/* Quick Links Section */}
         <section className="quick-links-section mb-16">
           <h2 className="section-title text-3xl font-bold text-center mb-10 relative pb-4 text-gray-800">
-            QUICK LINKS SECURITY
+            QUICK LINKS PROCESSES
             <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-red-600"></span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
@@ -104,7 +104,7 @@ const HerramientasSecurity = () => {
               className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
             >
               <FaShieldAlt className="text-blue-500 text-4xl mb-5" />
-              <h3 className="text-lg font-semibold">Security Systems</h3>
+              <h3 className="text-lg font-semibold">Systems</h3>
             </a>
 
             {/* Estrategic Objectives */}
@@ -126,7 +126,7 @@ const HerramientasSecurity = () => {
               className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
             >
               <FaClipboardList className="text-blue-500 text-4xl mb-5" />
-              <h3 className="text-lg font-semibold">Security Procedures</h3>
+              <h3 className="text-lg font-semibold">Library</h3>
             </a>
 
             {/* Voluntary Principles */}
@@ -169,7 +169,7 @@ const HerramientasSecurity = () => {
               className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
             >
               <FaLightbulb className="text-blue-500 text-4xl mb-5" />
-              <h3 className="text-lg font-semibold">Security Awareness</h3>
+              <h3 className="text-lg font-semibold">Awareness</h3>
             </a>
 
             {/* Risk Assessment */}
