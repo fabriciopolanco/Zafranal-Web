@@ -4,13 +4,13 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 // Imágenes de Seguridad Patrimonial
 import patrimonial1 from "../../assets/images/image1.jpeg";
-import patrimonial2 from "../../assets/images/image1.jpeg";
-import patrimonial3 from "../../assets/images/image1.jpeg";
+import patrimonial2 from "../../assets/images/image2.jpeg";
+import patrimonial3 from "../../assets/images/image3.jpeg";
 
 // Imágenes de Respuesta a Emergencias
-import emergencias1 from "../../assets/images/image2.jpeg";
-import emergencias2 from "../../assets/images/image2.jpeg";
-import emergencias3 from "../../assets/images/image2.jpeg";
+import emergencias1 from "../../assets/images/image4.jpeg";
+import emergencias2 from "../../assets/images/image5.jpeg";
+import emergencias3 from "../../assets/images/image6.jpeg";
 
 const ImageGallery = () => {
   const patrimonialImages = [
