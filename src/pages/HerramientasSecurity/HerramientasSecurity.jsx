@@ -89,7 +89,7 @@ const HerramientasSecurity = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
             {/* Headcount */}
             <a
-              href="https://app.powerbi.com/reportEmbed?reportId=21c29bfc-eea7-4f62-9723-64bce519b535&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
+              href="https://app.powerbi.com/reportEmbed?reportId=94dbda79-2b61-4225-b016-a76c2c38371c&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
               target="_blank"
               rel="noopener noreferrer"
               className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
@@ -99,7 +99,7 @@ const HerramientasSecurity = () => {
             </a>
             {/* Budget & Contracts */}
             <a
-              href="https://app.powerbi.com/reportEmbed?reportId=2520f01e-7bd6-4727-95e4-b2e49ddb49a0&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
+              href="https://app.powerbi.com/reportEmbed?reportId=55156fdd-cf48-40d6-b123-4fdff0d3fd2d&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
               target="_blank"
               rel="noopener noreferrer"
               className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
