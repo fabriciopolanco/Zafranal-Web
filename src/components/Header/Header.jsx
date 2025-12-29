@@ -46,13 +46,6 @@ const Header = () => {
                                     >
                                         Security and Emergency response
                                     </Link>
-                                    <Link 
-                                        to="/respuesta-emergencias" 
-                                        className="block px-4 py-2 hover:bg-gray-700 text-white"
-                                        onClick={() => setIsToolsOpen(false)}
-                                    >
-                                        Emergency response
-                                    </Link>
                                 </div>
                             )}
                         </li>

@@ -6,11 +6,13 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import patrimonial1 from "../../assets/images/image1.jpeg";
 import patrimonial2 from "../../assets/images/image2.jpeg";
 import patrimonial3 from "../../assets/images/image3.jpeg";
+import patrimonial4 from "../../assets/images/image4.jpeg";
 
 // Imágenes de Respuesta a Emergencias
-import emergencias1 from "../../assets/images/image4.jpeg";
-import emergencias2 from "../../assets/images/image5.jpeg";
-import emergencias3 from "../../assets/images/image6.jpeg";
+import emergencias1 from "../../assets/images/image5.jpeg";
+import emergencias2 from "../../assets/images/image6.jpeg";
+import emergencias3 from "../../assets/images/image7.jpeg";
+import emergencias4 from "../../assets/images/image9.jpeg";
 
 const ImageGallery = () => {
   const patrimonialImages = [
@@ -32,24 +34,36 @@ const ImageGallery = () => {
       title: "Tecnología Avanzada",
       description: "Sistemas de monitoreo moderno",
     },
+    {
+      id: 4,
+      src: patrimonial4,
+      title: "Simulacro de Evacuación",
+      description: "Respuesta coordinada",
+    },
   ];
 
   const emergenciasImages = [
     {
       id: 1,
       src: emergencias1,
-      title: "Simulacro de Evacuación",
-      description: "Respuesta coordinada",
-    },
-    {
-      id: 2,
-      src: emergencias2,
       title: "Primeros Auxilios",
       description: "Atención inmediata en sitio",
     },
     {
+      id: 2,
+      src: emergencias2,
+      title: "Control de Incendios",
+      description: "Equipo altamente preparado",
+    },
+    {
       id: 3,
       src: emergencias3,
+      title: "Control de Incendios",
+      description: "Equipo altamente preparado",
+    },
+        {
+      id: 4,
+      src: emergencias4,
       title: "Control de Incendios",
       description: "Equipo altamente preparado",
     },
@@ -152,7 +166,7 @@ const ImageGallery = () => {
           {/* Izquierda: Seguridad Patrimonial */}
           <div className="flex flex-col">
             <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">
-              Patrimonial <span className="text-blue-600">Security</span>
+              <span className="text-blue-600">Security</span>
             </h3>
             <Carousel images={patrimonialImages} />
           </div>
@@ -160,7 +174,7 @@ const ImageGallery = () => {
           {/* Derecha: Respuesta a Emergencias */}
           <div className="flex flex-col">
             <h3 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-8">
-                Emergency  <span className="text-blue-600">Response</span>
+              Emergency <span className="text-blue-600">Response</span>
             </h3>
             <Carousel images={emergenciasImages} />
           </div>

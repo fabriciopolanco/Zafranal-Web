@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import {
+  FaBell,
   FaChevronDown,
   FaArrowRight,
   FaUsers,
@@ -14,6 +15,7 @@ import {
   FaDatabase,
   FaSearch,
 } from "react-icons/fa";
+import { AiFillAlert } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
@@ -31,14 +33,14 @@ const HerramientasSecurity = () => {
       title: "Antares Rounds Management System",
       description:
         "Un sistema digital de gestión de patrullaje e inspección diseñado para monitorear puntos de control de seguridad críticos en todo el Proyecto Zafranal, lo que permite la detección temprana de incidentes y una respuesta inmediata.",
-      link: "https://make.powerapps.com/e/Default-ce6ec000-1cfa-49c2-a24f-7db63c8a9a52/canvas/?action=edit&app-id=%2Fproviders%2FMicrosoft.PowerApps%2Fapps%2F91d147e0-e3de-42a2-849c-d87976bf006e&utm_source=PAMarketing&utm_medium=header&utm_campaign=signin",
+      link: "https://apps.powerapps.com/play/e/default-ce6ec000-1cfa-49c2-a24f-7db63c8a9a52/a/f5dad7ab-f978-47b9-aeec-3b559619acbb?tenantId=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52&hint=e091d69c-1c87-4e76-ae8d-cf79bd534340&sourcetime=1766980532792&source=portal",
       icon: <FaShieldAlt />,
     },
     {
       title: "Emergency Panic Button System",
       description:
         "Un sistema de alerta de emergencia en tiempo real que permite al personal notificar instantáneamente al Centro de Control de Seguridad en situaciones críticas, lo que permite una respuesta y escalada rápidas.",
-      link: "https://make.powerapps.com/e/Default-ce6ec000-1cfa-49c2-a24f-7db63c8a9a52/canvas/?action=edit&app-id=%2Fproviders%2FMicrosoft.PowerApps%2Fapps%2F91d147e0-e3de-42a2-849c-d87976bf006e&utm_source=PAMarketing&utm_medium=header&utm_campaign=signin",
+      link: "https://apps.powerapps.com/play/e/default-ce6ec000-1cfa-49c2-a24f-7db63c8a9a52/a/f5dad7ab-f978-47b9-aeec-3b559619acbb?tenantId=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52&hint=e091d69c-1c87-4e76-ae8d-cf79bd534340&sourcetime=1766980532792&source=portal",
       icon: <FaExclamationTriangle />,
     },
     {
@@ -197,6 +199,14 @@ const HerramientasSecurity = () => {
               <FaSearch className="text-blue-500 text-4xl mb-5" />
               <h3 className="text-lg font-semibold">Investigations</h3>
             </Link>
+            {/* Drills */}
+            <a
+              href="#"
+              className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
+            >
+              <AiFillAlert className="text-blue-600 text-5xl mb-5" />
+              <h3 className="text-lg font-semibold">Drills</h3>
+            </a>
           </div>
         </section>
 
