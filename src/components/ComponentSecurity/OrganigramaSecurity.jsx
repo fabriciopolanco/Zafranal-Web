@@ -236,10 +236,11 @@ const OrganigramaSecurity = () => {
       <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-4">
         Logos
       </h2>
-      {/* ===================== OUR LOGOS - FULL WIDTH REAL (sin max-w-7xl) ===================== */}
-      <div className="shadow-2xl py-12 md:py-10 mt-20 bg-gray-400">
+
+      {/* ===================== OUR LOGOS - FULL WIDTH REAL ===================== */}
+      <div className="w-full shadow-2xl py-8 md:py-12 bg-gray-400">
         <div className="px-6">
-          {/* Los 3 logos centrados en fila, ocupando el ancho disponible */}
+          {/* Los 3 logos centrados en fila */}
           <div className="flex justify-center items-center gap-12 md:gap-32 flex-wrap lg:flex-nowrap">
             <img
               src={logo1}
