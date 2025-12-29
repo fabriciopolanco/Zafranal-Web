@@ -22,7 +22,7 @@ const Header = () => {
                         </li>
                         <li>
                             <Link to="/security" className="hover:text-blue-400 transition">
-                                Security
+                                Org
                             </Link>
                         </li>
                         <li className="relative">
