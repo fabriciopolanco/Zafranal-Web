@@ -47,21 +47,21 @@ const HerramientasSecurity = () => {
       title: "Alcohol Testing Management System",
       description:
         "Un sistema centralizado para gestionar los procesos de pruebas de alcohol, seguimiento de resultados, verificación de cumplimiento y auditabilidad para garantizar la seguridad de la fuerza laboral y el cumplimiento normativo.",
-      link: "https://app.powerbi.com/reportEmbed?reportId=c9c37684-ca46-406b-b3e4-35d4d95b92ab&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52",
+      link: "https://app.powerbi.com/reportEmbed?reportId=809be9b1-6e11-4052-aec8-94cd4368c7ca&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52",
       icon: <FaClipboardList />,
     },
     {
       title: "Vehicle Movement & Linear Traffic Control System",
       description:
         "Una plataforma de monitoreo y control del movimiento de vehículos y tráfico lineal dentro de la operación, diseñada para mejorar la seguridad vial, la eficiencia operativa y la prevención de incidentes.",
-      link: "https://app.powerbi.com/reportEmbed?reportId=caa5e7e6-7d2d-42a3-938c-80e598962f92&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52",
+      link: "https://app.powerbi.com/reportEmbed?reportId=b10019e6-9a15-4911-ab53-2b28868cbc02&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52",
       icon: <FaChartLine />,
     },
     {
       title: "Unsafe Conditions Reporting System",
       description:
         "Un sistema digital para el registro, seguimiento y gestión de condiciones inseguras identificadas dentro del Proyecto Zafranal, que permite la notificación oportuna, evaluación de riesgos, asignación de acciones correctivas y trazabilidad hasta su cierre, fortaleciendo la prevención de incidentes y la cultura de seguridad.",
-      link: "https://app.powerbi.com/reportEmbed?reportId=2c5a375c-45c8-4168-94c2-c0f19227a082&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52",
+      link: "https://app.powerbi.com/reportEmbed?reportId=82ed645a-3dd6-4dc5-b30b-87af9a74c89e&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52",
       icon: <FaHardHat />,
     },
   ];
@@ -120,7 +120,7 @@ const HerramientasSecurity = () => {
             </a>
             {/* KPI's */}
             <a
-              href="https://app.powerbi.com/reportEmbed?reportId=973ee36b-74be-491b-bb35-233c2d684661&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
+              href="https://app.powerbi.com/reportEmbed?reportId=7c9d52bd-b137-429f-bf19-3cff7054eb1e&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
               target="_blank"
               rel="noopener noreferrer"
               className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
@@ -129,9 +129,9 @@ const HerramientasSecurity = () => {
               <h3 className="text-lg font-semibold">KPI's</h3>
             </a>
 
-            {/* Security Systems */}
+            {/* Systems */}
             <a
-              href="https://app.powerbi.com/reportEmbed?reportId=f02ba3aa-9f48-4eae-a89e-73c344804631&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
+              href="https://app.powerbi.com/reportEmbed?reportId=004ef853-aa50-403a-bf38-7cdeaa09d20c&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
               target="_blank"
               rel="noopener noreferrer"
               className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
@@ -149,9 +149,9 @@ const HerramientasSecurity = () => {
               <FaLightbulb className="text-blue-500 text-4xl mb-5" />
               <h3 className="text-lg font-semibold">Awareness</h3>
             </a>
-            {/* Security Procedures */}
+            {/* Library */}
             <a
-              href="https://app.powerbi.com/reportEmbed?reportId=b9f3bbe8-dd0c-4f20-a661-12b0906b38b8&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
+              href="https://app.powerbi.com/reportEmbed?reportId=96ead6ab-f303-4478-b584-bcd988e51f17&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
               target="_blank"
               rel="noopener noreferrer"
               className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
