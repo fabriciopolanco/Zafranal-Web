@@ -231,14 +231,14 @@ const OrganigramaSecurity = () => {
           </div>
         </div>
       </div>
-      {/* ===================== OUR LOGOS - FULL WIDTH REAL (sin max-w-7xl) ===================== */}
-      <div className="w-full bg-blue shadow-2xl py-12 md:py-20 mt-20">
-        <div className="px-6">
-          {/* Título centrado, sin límite de ancho */}
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-16">
-            Our Logos
-          </h2>
+      {/* Título centrado, sin límite de ancho */}
 
+      <h2 className="text-4xl md:text-5xl font-bold text-gray-900 text-center mb-4">
+        Logos
+      </h2>
+      {/* ===================== OUR LOGOS - FULL WIDTH REAL (sin max-w-7xl) ===================== */}
+      <div className="shadow-2xl py-12 md:py-10 mt-20 bg-gray-400">
+        <div className="px-6">
           {/* Los 3 logos centrados en fila, ocupando el ancho disponible */}
           <div className="flex justify-center items-center gap-12 md:gap-32 flex-wrap lg:flex-nowrap">
             <img

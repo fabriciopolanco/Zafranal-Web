@@ -87,6 +87,37 @@ const HerramientasSecurity = () => {
             <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-red-600"></span>
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
+            {/* Headcount */}
+            <a
+              href="https://app.powerbi.com/reportEmbed?reportId=21c29bfc-eea7-4f62-9723-64bce519b535&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
+            >
+              <FaUsers className="text-blue-500 text-4xl mb-5" />
+              <h3 className="text-lg font-semibold">Headcount</h3>
+            </a>
+            {/* Budget & Contracts */}
+            <a
+              href="https://app.powerbi.com/reportEmbed?reportId=2520f01e-7bd6-4727-95e4-b2e49ddb49a0&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
+            >
+              <FaFileInvoiceDollar className="text-blue-500 text-4xl mb-5" />
+              <h3 className="text-lg font-semibold">Budget & Contracts</h3>
+            </a>
+
+            {/* Estrategic Objectives */}
+            <a
+              href="https://lookerstudio.google.com/u/4/reporting/e7a89280-7825-4e4b-9cd0-75031acabdc4/page/p_jj90ukcvpd"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
+            >
+              <FaBullseye className="text-blue-500 text-4xl mb-5" />
+              <h3 className="text-lg font-semibold">Estrategic Objectives</h3>
+            </a>
             {/* KPI's */}
             <a
               href="https://app.powerbi.com/reportEmbed?reportId=973ee36b-74be-491b-bb35-233c2d684661&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
@@ -108,18 +139,16 @@ const HerramientasSecurity = () => {
               <FaShieldAlt className="text-blue-500 text-4xl mb-5" />
               <h3 className="text-lg font-semibold">Systems</h3>
             </a>
-
-            {/* Estrategic Objectives */}
+            {/* Security Awareness */}
             <a
-              href="https://lookerstudio.google.com/u/4/reporting/e7a89280-7825-4e4b-9cd0-75031acabdc4/page/p_jj90ukcvpd"
+              href="https://app.powerbi.com/view?r=eyJrIjoiMGE4M2M2MzgtODBhZS00MjgwLTkzMzktMWQwNzg1ZDM1NGQ3IiwidCI6IjgwOTIzNmIxLTgwMTYtNDNlNC1hNWFkLWI2OTE4NjdkMmUxNCIsImMiOjR9"
               target="_blank"
               rel="noopener noreferrer"
               className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
             >
-              <FaBullseye className="text-blue-500 text-4xl mb-5" />
-              <h3 className="text-lg font-semibold">Estrategic Objectives</h3>
+              <FaLightbulb className="text-blue-500 text-4xl mb-5" />
+              <h3 className="text-lg font-semibold">Awareness</h3>
             </a>
-
             {/* Security Procedures */}
             <a
               href="https://app.powerbi.com/reportEmbed?reportId=b9f3bbe8-dd0c-4f20-a661-12b0906b38b8&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
@@ -141,38 +170,6 @@ const HerramientasSecurity = () => {
                 Voluntary Principles on Security and Human Rights
               </h3>
             </Link>
-            {/* Headcount */}
-            <a
-              href="https://app.powerbi.com/reportEmbed?reportId=21c29bfc-eea7-4f62-9723-64bce519b535&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
-            >
-              <FaUsers className="text-blue-500 text-4xl mb-5" />
-              <h3 className="text-lg font-semibold">Headcount</h3>
-            </a>
-
-            {/* Budget & Contracts */}
-            <a
-              href="https://app.powerbi.com/reportEmbed?reportId=2520f01e-7bd6-4727-95e4-b2e49ddb49a0&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
-            >
-              <FaFileInvoiceDollar className="text-blue-500 text-4xl mb-5" />
-              <h3 className="text-lg font-semibold">Budget & Contracts</h3>
-            </a>
-
-            {/* Security Awareness */}
-            <a
-              href="https://app.powerbi.com/view?r=eyJrIjoiMGE4M2M2MzgtODBhZS00MjgwLTkzMzktMWQwNzg1ZDM1NGQ3IiwidCI6IjgwOTIzNmIxLTgwMTYtNDNlNC1hNWFkLWI2OTE4NjdkMmUxNCIsImMiOjR9"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
-            >
-              <FaLightbulb className="text-blue-500 text-4xl mb-5" />
-              <h3 className="text-lg font-semibold">Awareness</h3>
-            </a>
 
             {/* Risk Assessment */}
             <Link
