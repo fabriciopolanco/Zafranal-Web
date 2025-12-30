@@ -139,9 +139,9 @@ const HerramientasSecurity = () => {
               <FaShieldAlt className="text-blue-500 text-4xl mb-5" />
               <h3 className="text-lg font-semibold">Systems</h3>
             </a>
-            {/* Security Awareness */}
+            {/* Awareness */}
             <a
-              href="https://app.powerbi.com/view?r=eyJrIjoiMGE4M2M2MzgtODBhZS00MjgwLTkzMzktMWQwNzg1ZDM1NGQ3IiwidCI6IjgwOTIzNmIxLTgwMTYtNDNlNC1hNWFkLWI2OTE4NjdkMmUxNCIsImMiOjR9"
+              href="https://app.powerbi.com/reportEmbed?reportId=555137cf-f02b-41ee-a2bb-33b5a1d540d1&autoAuth=true&ctid=ce6ec000-1cfa-49c2-a24f-7db63c8a9a52"
               target="_blank"
               rel="noopener noreferrer"
               className="quick-link-card bg-white rounded-lg p-6 text-center shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex flex-col items-center text-gray-800 hover:text-red-600"
